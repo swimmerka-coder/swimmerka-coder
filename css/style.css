@@ -1,0 +1,593 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content{
+    max-width: 1179px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-image: url(img/Img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f2f0;
+    padding: 60px 15px 15px 15px;
+}
+
+.logo{
+    text-transform: uppercase;
+}
+
+.logo span{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+}
+
+.menu{
+    width: 50%;
+}
+
+.a_menu{
+    position: relative;
+    color: #333;
+    padding: 0 25px;
+    text-transform: uppercase;
+}
+
+
+.a_menu:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #000; /*задаём цвет линии*/
+	content: "";
+	transition: width 1.3s ease-out; /*задаём время анимации*/
+}
+
+
+.a_menu:hover:after,
+.a_menu:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+
+.a_button:hover{
+    text-decoration: none;
+}
+.banner {
+    width: 26%;
+    height: 60px;
+    border: 2px solid #1769ff;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 0 15px 0 55px;
+    transition: background .8s;
+}
+
+.banner:hover{
+    background-color: #1769ff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(25%, 41%, 88%);
+}
+
+.banner a{
+    text-decoration: none;
+    color: #1769ff;
+    padding: 0 15px 0 15px;
+    transition: color 1.5s;
+}
+
+.banner:hover a{
+    color: #fff;
+}
+
+.text_banner{
+    margin-top: 200px;
+    margin-left: 60%;
+    padding-bottom: 240px;
+}
+
+.hello{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.job{
+    font-size: 48px;
+    width: 120%;
+    margin-bottom: 45px;
+}
+
+.job_discription{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    width: 126%;
+    color: #777777;
+    margin-bottom: 45px;
+}
+
+.main_button{
+    width: 45%;  
+}
+
+.main_button a{
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #1769ff;
+    background-color: #1769ff;
+    box-shadow: 0 0 10px rgba(25%, 41%, 88%);
+    border-radius: 40px;
+    padding: 17px 50px;
+    transition: padding 2.9s;
+    transition: background 2.9s;
+    transition: color 2.9s;
+    transition: border 2.9s;
+    
+}
+
+.main_button:hover a{
+    color: #1769ff;
+    border: none;
+    background-color: #f3f2f0;
+    box-shadow: 2px solid #1769ff;
+}
+
+
+
+
+
+
+
+
+
+
+.services{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 170px;
+}
+
+.heading{
+    position: relative;
+}
+
+
+.bold{
+    font-weight: 900;
+    color: #bcb9b9;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.main{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 490px;
+    z-index: 1;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    margin-top: 70px;
+    color: #1769ff;
+    width: 30%;
+    padding: 55px 0;
+    transition: background 1.9s;
+    transition: border 1.9s;
+}
+
+.card:hover{
+    background: #1769ff;
+    border: 2px solid #1769ff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(25%, 41%, 88%);
+    color: #fff;
+}
+
+.card:hover .icon_service{
+    color: #fff;
+}
+
+.card:hover .service{
+    color: #fff;
+}
+
+.card:hover .hr_service{
+    background-color: #fff;
+}
+
+.card:hover .service_discription{
+    color: #fff;
+}
+
+.icon_service{
+    font-size: 45px;
+    margin: 0 43%;
+    transition: color .9s;
+}
+
+.service{
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: color .9s;
+}
+
+.hr_service{
+    height: 3px;
+    background-color: #1769ff;
+    width: 15%;
+    margin-bottom: 40px;
+    transition: background .9s;
+}
+
+.service_discription{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    width: 75%;
+    text-align: center;
+    margin: 0 13%;
+    transition: color .9s;
+}
+
+
+
+
+
+
+
+
+.portfolio{
+    background-color: #f4f4f4;
+    height: 1400px;
+}
+
+.all_about{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.about__item {
+    padding-bottom: 80px;
+    padding-left: 15px;
+    width: 430px;
+    height: 250px;
+}
+
+.about_inner{
+    position: relative;
+
+    background-color: #95e1d3;   
+}
+
+
+.about__item:hover .about__img img {
+    opacity: .1;
+}
+
+.about__item:hover .about__text {
+    opacity: 1;
+}
+
+.about__img {
+    background: #1769ff;
+
+    transition: transform .2s linear;
+}
+
+.about__img img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.about__text {
+    width: 100%;
+
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: 2;
+
+    transition: opacity .2s linear;
+}
+
+.about_title_iner{
+    color: #fff;
+}
+
+.hr_about{
+    width: 15%;
+    height: 3px;
+}
+
+.title_portfolio{
+    padding-top: 140px;
+    padding-bottom: 65px;
+}
+
+.main_portfolio{
+    top: 140px;
+    left: 455px
+}
+
+.all_img{
+    margin: 0 auto;
+    width: 1400px;
+}
+
+.hr_about{
+    background-color: #fff;   
+}
+
+.img_book{
+    width: 430px;
+    height: 410px;
+}
+
+
+
+
+
+
+
+.awesome{
+   font-family: 'Poppins', sans-serif;
+    margin-top: 130px;
+    padding-bottom: 120px;
+}
+
+.p_awesome{
+    font-weight: 300;
+    font-size: 32px;
+    margin: 0;
+}
+
+.main_awesome{
+    display: flex;
+    justify-content: space-between;
+}
+.discription_awesome{
+    color: #777777
+}
+
+
+
+
+
+
+
+
+
+.quote_slaider{
+    background-color: #f4f4f4;
+}
+
+.img_face{
+    margin: 0 45%;
+}
+
+.name_client{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 45%;
+}
+.title{
+    padding-top: 170px;
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+}
+
+.job_client{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #ababab;
+    margin: 0 45%;
+}
+
+.quote_allen{
+    text-align: center;
+    width: 80%;
+    margin: 45px auto 0;
+}
+
+.dount{
+    position: relative;
+    margin: 0 46%;
+    margin-top: 90px;
+    padding-bottom: 160px;
+}
+
+
+.active_dount{
+}
+
+.over_dount{
+    position: absolute;
+    top: 6px;
+    left: 25px;
+    z-index: 1;
+    z-index: 1;
+}
+.dount img{
+    padding: 0 7px 0 0;
+}
+
+
+
+
+
+
+.menu_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: 20px auto;
+}
+
+.a_footer{
+    position: relative;
+    color: #333;
+    padding: 0 15px;
+    text-transform: uppercase;
+    transition: all 1s ease-out;
+}
+
+.a_footer:hover{
+    transition: all 2s ease-out;
+    border: 2px solid  #1769ff;
+    border-radius: 20px;
+    background-color: #1769ff;
+    color: #fff;
+    padding: 0 20px;
+}
+
+input{
+    max-height: 20px
+}
+
+footer button{
+    max-height: 25px;
+    border: none;
+    background-color: #fff;
+}
+
+footer button:hover{
+    transition: all 1s ease-out;
+    border: 2px solid #1769ff;
+    border-radius: 20px;
+}
+
+.icons{
+    font-size: 20px;
+    width: 40%;
+    margin: 70px auto;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-twitter{
+    margin-right: 45px;
+    padding: 15px 15px;
+    border: 2px solid #ebebeb;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    transition: all 1s ease-out;
+}
+
+.fa-instagram{
+    margin-right: 45px;
+    padding: 15px 16px;
+    border: 2px solid #ebebeb;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    transition: all 1s ease-out;
+}
+
+.fa-youtube{
+    padding: 15px 14px;
+    border: 2px solid #ebebeb;
+    background-color: #ebebeb;
+    border-radius: 50%; 
+    transition: all 1s ease-out;
+}
+
+.fa-facebook-f{
+    margin-right: 45px;
+    padding: 15px 19px;
+    border: 2px solid #ebebeb;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    transition: all 1s ease-out;
+}
+
+footer .content p{
+    text-align: center;
+}
+
+
+.fa-twitter:hover:hover{
+    padding: 15px 15px;
+    border: 2px solid #1769ff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(25%, 41%, 88%);
+    background-color: #1769ff;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.fa-instagram:hover{
+    padding: 15px 16px;
+    border: 2px solid #1769ff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(25%, 41%, 88%);
+    background-color: #1769ff;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.fa-youtube:hover{
+    padding: 15px 14px;
+    border: 2px solid #1769ff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(25%, 41%, 88%);
+    background-color: #1769ff;
+    color: #fff;
+    border-radius: 50%;   
+}
+
+.fa-facebook-f:hover{
+    padding: 15px 19px;
+    border: 2px solid #1769ff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(25%, 41%, 88%);
+    background-color: #1769ff;
+    color: #fff;
+    border-radius: 50%;
+}
